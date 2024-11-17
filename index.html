@@ -9,14 +9,14 @@
     <title>Portfolio | Shubham Dixit</title>
     
     <!-- Favicon -->
-    <link rel="icon" href="./images/cartoon_img.png" type="image/x-icon" />
+    <link rel="icon" href="./public/images/cartoon_img.png" type="image/x-icon" />
     
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="./src/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
           integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
           crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="./output.css" rel="stylesheet" />
+    <link href="./src/output.css" rel="stylesheet" />
   
     <!-- Social Media Open Graph -->
     <meta property="og:title" content="Shubham Dixit's Portfolio" />
@@ -36,7 +36,7 @@
     <!-- Nav Section -->
     <nav class="backdrop-blur-md sticky top-0 min-h-16 shadow-md">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4" >
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse" >
+        <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse" >
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" >Portfolio</span>
         </a>
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center  text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -72,7 +72,7 @@
       <!-- Home Section -->
       <section id="home" class="p-2 flex flex-col md:flex-row md:justify-between w-full items-center min-h-[90vh] md:min-h-[100vh]">
         <div class="w-full md:w-[50%] items-center justify-center flex">
-          <img src="../public/images/cartoon_img.png" alt="img" class="h-40 md:h-96 w-auto">
+          <img src="./public/images/cartoon_img.png" alt="img" class="h-40 md:h-96 w-auto">
         </div>
         <div class="w-full md:w-[50%] items-center md:items-start justify-center flex flex-col gap-7 md:gap-8 p-2">
           <h1 class="text-3xl md:text-5xl font-bold ">Hello, I'm <span class="font-semibold text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-sky-400"><b>Shubham</b></span></h1>
@@ -137,37 +137,37 @@
             <tbody class="flex flex-col gap-8 md:gap-5">
               <!-- Front-end -->
               <tr class=" flex md:flex-row flex-col">
-                <th scope="row" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 flex items-center gap-2 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white w-full md:w-44"><img src="../public/icons/front-end.svg" alt="icon" class="h-8"> FRONT END</th>
+                <th scope="row" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 flex items-center gap-2 px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white w-full md:w-44"><img src="./public/icons/front-end.svg" alt="icon" class="h-8"> FRONT END</th>
                 <td class="px-6 py-4 flex flex-wrap gap-8">
-                  <img src="../public/icons/HTML.svg" alt="icon" class="h-9">
-                  <img src="../public/icons/CSS.svg" alt="icon" class="h-9">
-                  <img src="../public/icons/Bootstrap.svg" alt="icon" class="h-9">
-                  <img src="../public/icons/JavaScript.svg" alt="icon" class="h-9">
-                  <img src="../public/icons/TypeScript.svg" alt="icon" class="h-9">
-                  <img src="../public/icons/React-Dark.svg" alt="icon" class="h-9">
-                  <img src="../public/icons/NextJS-Dark.svg" alt="icon" class="h-9">
-                  <img src="../public/icons/TailwindCSS-Dark.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/HTML.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/CSS.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/Bootstrap.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/JavaScript.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/TypeScript.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/React-Dark.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/NextJS-Dark.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/TailwindCSS-Dark.svg" alt="icon" class="h-9">
                 </td>
               </tr>
               <!-- Back-end -->
               <tr class=" flex md:flex-row flex-col">
-                  <th scope="row" class=" bg-white border-b dark:bg-gray-800 dark:border-gray-700 px-6 py-4 flex items-center gap-2 font-medium text-gray-900 whitespace-nowrap dark:text-white w-full md:w-44"><img src="../public/icons/back-end.svg" alt="icon" class="h-8"> BACK END</th>
+                  <th scope="row" class=" bg-white border-b dark:bg-gray-800 dark:border-gray-700 px-6 py-4 flex items-center gap-2 font-medium text-gray-900 whitespace-nowrap dark:text-white w-full md:w-44"><img src="./public/icons/back-end.svg" alt="icon" class="h-8"> BACK END</th>
                   <td class="px-6 py-4 flex flex-wrap gap-8 ">
-                    <img src="../public/icons/Python-Dark.svg" alt="icon" class="h-9">
-                    <img src="../public/icons/MongoDB.svg" alt="icon" class="h-9">
-                    <img src="../public/icons/ExpressJS-Light.svg" alt="icon" class="h-9">
-                    <img src="../public/icons/NodeJS-Dark.svg" alt="icon" class="h-9">
+                    <img src="./public/icons/Python-Dark.svg" alt="icon" class="h-9">
+                    <img src="./public/icons/MongoDB.svg" alt="icon" class="h-9">
+                    <img src="./public/icons/ExpressJS-Light.svg" alt="icon" class="h-9">
+                    <img src="./public/icons/NodeJS-Dark.svg" alt="icon" class="h-9">
                   </td>
               </tr>
               <!-- Extra-skill -->
               <tr class=" flex  md:flex-row flex-col">
-                <th scope="row" class="px-6 py-4 flex items-center gap-2 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-white dark:bg-gray-800 w-full md:w-44"><img src="../public/icons/ext-skill.svg" alt="icon" class="h-8"> EXTRA SKILLS</th>
+                <th scope="row" class="px-6 py-4 flex items-center gap-2 font-medium text-gray-900 whitespace-nowrap dark:text-white bg-white dark:bg-gray-800 w-full md:w-44"><img src="./public/icons/ext-skill.svg" alt="icon" class="h-8"> EXTRA SKILLS</th>
                 <td class="px-6 py-4 flex flex-wrap gap-8 ">
-                  <img src="../public/icons/Git.svg" alt="icon" class="h-9">
-                  <img src="../public/icons/Github-Dark.svg" alt="icon" class="h-9">
-                  <img src="../public/icons/VSCode-Dark.svg" alt="icon" class="h-9">
-                  <img src="../public/icons/Vite-Dark.svg" alt="icon" class="h-9">
-                  <img src="../public/icons/Figma-Dark.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/Git.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/Github-Dark.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/VSCode-Dark.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/Vite-Dark.svg" alt="icon" class="h-9">
+                  <img src="./public/icons/Figma-Dark.svg" alt="icon" class="h-9">
                 </td>
               </tr>
             </tbody>
@@ -178,7 +178,7 @@
 
       <!-- Projects Section -->
       <section id="projects" class="my-6 md:my-12 p-2 flex flex-col w-full items-start gap-5 ">
-        <h2 class=" text-3xl md:text-4xl font-extrabold dark:text-white flex items-center justify-center gap-2"><img src="../public/icons/work.svg" alt="">Projects</h2>
+        <h2 class=" text-3xl md:text-4xl font-extrabold dark:text-white flex items-center justify-center gap-2"><img src="./public/icons/work.svg" alt="">Projects</h2>
         <div class="flex gap-5 flex-wrap">
           <!-- Employee Management System -->
           <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -186,6 +186,13 @@
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A system to manage employees effectively with features like task allocation and status tracking. Built using React with organized local storage management.</p>
             <a href="https://project-ems.netlify.app/" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Project</a>
             <a href="https://github.com/shubhamdixit2555/EMS" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Code</a>
+          </div>
+          <!-- Family Golf Clone -->
+          <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Family Golf Clone</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A UI clone of the 'Family Golf' website, designed to recreate its user-friendly interface with attention to detail in layout and responsiveness</p>
+            <a href="https://shubham-project-golf.netlify.app/" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Project</a>
+            <a href="https://github.com/shubhamdixit2555/project-golf" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Code</a>
           </div>
           <!-- Netflix UI Clone -->
           <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -201,19 +208,12 @@
             <a href="https://visualfetch.netlify.app/" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Project</a>
             <a href="https://github.com/shubhamdixit2555/visual-fetch" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Code</a>
           </div>
-          <!-- Family Golf Clone -->
-          <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Family Golf Clone</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">A UI clone of the 'Family Golf' website, designed to recreate its user-friendly interface with attention to detail in layout and responsiveness</p>
-            <a href="https://shubham-project-golf.netlify.app/" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Project</a>
-            <a href="https://github.com/shubhamdixit2555/project-golf" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Code</a>
-          </div>
         </div>
       </section>
 
       <!-- Contact Section -->
       <section id="contact" class="my-6 md:my-12 p-2 flex flex-col w-full items-start gap-5  ">
-        <h2 class=" text-3xl md:text-4xl font-extrabold dark:text-white flex items-center justify-center gap-2"><img src="../public/icons/contact.svg" alt="">Contact Me</h2>
+        <h2 class=" text-3xl md:text-4xl font-extrabold dark:text-white flex items-center justify-center gap-2"><img src="./public/icons/contact.svg" alt="">Contact Me</h2>
         <form class="max-w-md mx-auto w-full px-3 py-2" action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="5c30d441-a642-4ba0-8466-e799185ebcc8">
           <div class="grid md:grid-cols-2 md:gap-6">
@@ -245,7 +245,7 @@
       <p>© 2024 Shubham Dixit. All rights reserved.</p>
     </footer>
 
-    <script src="custom.js"></script>
+    <script src="./src/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </body>
 </html>
