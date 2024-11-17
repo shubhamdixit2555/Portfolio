@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    padding-top: 4rem; /* Adjust according to your navbar height */
+    margin-top: -4rem; /* Same value to offset the padding */
+  }
+  
+  nav ul li a.active {
+    color: #2c5feb;
+    font-weight: 900;
+  }
