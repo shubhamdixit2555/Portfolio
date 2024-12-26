@@ -1,6 +1,8 @@
 html {
   scroll-behavior: smooth;
 }
+* {cursor: url(https://cur.cursors-4u.net/cursors/cur-1/cur1.ani), url(https://cur.cursors-4u.net/cursors/cur-1/cur1.png), auto !important;}
+a, button, .pointer{cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1149.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1149.png), auto !important;}
 
 section {
   padding-top: 4rem; /* Adjust according to your navbar height */
@@ -8,7 +10,7 @@ section {
 }
 
 nav ul li a.active {
-  color: #2c5feb;
+  color: #45a9f6;
   font-weight: 900;
 }
 
@@ -22,4 +24,32 @@ nav ul li a.active {
 ::-webkit-scrollbar-thumb {
   background-color: #4071fab2; /* Color of the scrollbar handle */
   border-radius: 10px; /* Roundness of the scrollbar handle */
+}
+#cursor{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #45a9f6;
+  filter: blur(5px);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.3s linear;
+  transition-property: width, height, background-color, border;
+}
+.crsr_hover{
+  height: 70px !important; 
+  width: 70px !important;
+  background-color: transparent !important;
+  border: 2px solid #a700fe !important;
+  filter: blur(3px);
+}
+
+/* hide custom cursor on mobile or tab screen */
+@media (max-width: 768px) {
+  #cursor {
+    display: none;
+  }
 }

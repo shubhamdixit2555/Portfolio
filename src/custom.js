@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
   let navLinks = document.querySelectorAll('#navbar-default ul li a');
   let navbarHeight = document.querySelector('nav').offsetHeight;
 
-   // Adjust padding to prevent content from hiding under navbar
-   sections.forEach(function (section) {
+  // Adjust padding to prevent content from hiding under navbar
+  sections.forEach(function (section) {
     section.style.paddingTop = navbarHeight + 'px';
     section.style.marginTop = '-' + navbarHeight + 'px';
-   });
+  });
 
   window.onscroll = () => {
     sections.forEach(sec => {
@@ -24,4 +24,27 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   };
+});
+  
+// move cursor
+document.addEventListener('DOMContentLoaded', function() {
+  const cursor = document.querySelector('#cursor');
+  document.addEventListener('mousemove', (e) => {
+      const x = e.clientX;
+      const y = e.clientY;
+      // Adjust the position to center the cursor 
+      const cursorWidth = cursor.offsetWidth / 2;
+      const cursorHeight = cursor.offsetHeight / 2;
+      cursor.style.transform = `translate(${x - cursorWidth}px, ${y - cursorHeight}px)`;
+  });
+
+  const links = document.querySelectorAll('a, button, .pointer');
+  links.forEach(link => {
+      link.addEventListener('mouseenter', () => {
+          cursor.classList.add("crsr_hover");        
+      });
+      link.addEventListener('mouseleave', () => {
+          cursor.classList.remove("crsr_hover");        
+      });
+  });
 });
